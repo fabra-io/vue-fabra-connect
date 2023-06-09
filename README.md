@@ -4,7 +4,7 @@
 `npm i @fabra/vue-fabra-connect`
 
 ## Usage
-```
+```vue
 <script>
 import FabraConnect from "@fabra/vue-fabra-connect";
 export default {
@@ -14,16 +14,16 @@ export default {
       customTheme: {
         colors: {
           primary: {
-            base: #805AD5, // Default color for buttons, graphics, etc
-            hover: #553C9A, // Hover color for buttons and links
-            text: #FFFFFF, // The font color on top of the primary color
+            base: "#805AD5", // Default color for buttons, graphics, etc
+            hover: "#553C9A", // Hover color for buttons and links
+            text: "#FFFFFF", // The font color on top of the primary color
           }
         }
       }
     }
   }
 };
-<script/>
+</script>
 <template>
   <section>
     <fabra-connect :linkToken="ADD_GENERATED_LINK_TOKEN" /* :customTheme="customTheme" */>
@@ -33,5 +33,4 @@ export default {
     </fabra-connect>
   </section>
 </template>
-</script>
 ```
