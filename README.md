@@ -25,12 +25,11 @@ export default {
 };
 </script>
 <template>
-  <section>
-    <fabra-connect :linkToken="ADD_GENERATED_LINK_TOKEN" /* :customTheme="customTheme" */>
-      <template slot="button" slot-scope="props">
-        <button @click="props.onClick">Open Fabra Connect</button>
-      </template>
-    </fabra-connect>
-  </section>
+  <div id="fabra-connect-container"></div>
+  <fabra-connect :linkToken="ADD_GENERATED_LINK_TOKEN" containerID="fabra-connect-container" /* :customTheme="customTheme" */>
+    <template #button="props">
+      <button @click="props.onClick">Open Fabra Connect</button>
+    </template>
+  </fabra-connect>
 </template>
 ```
