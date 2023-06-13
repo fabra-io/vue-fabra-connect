@@ -2,7 +2,7 @@
   <div class="open-fabra-connect-button">
     <slot name="button" :onClick="open">
       <button @click="() => open()">
-        <slot>Open Fabra Connect</slot> <!-- default content -->
+        <slot>Open Fabra Connect</slot>
       </button>
     </slot>
   </div>

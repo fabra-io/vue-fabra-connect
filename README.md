@@ -25,8 +25,7 @@ export default {
 };
 </script>
 <template>
-  <div id="fabra-connect-container"></div>
-  <fabra-connect :linkToken="ADD_GENERATED_LINK_TOKEN" containerID="fabra-connect-container" /* :customTheme="customTheme" */>
+  <fabra-connect :linkToken="ADD_GENERATED_LINK_TOKEN" :customTheme="customTheme">
     <template #button="props">
       <button @click="props.onClick">Open Fabra Connect</button>
     </template>
