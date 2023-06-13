@@ -34,12 +34,6 @@ export default defineComponent({
       console.error("Failed to load script initialize.js");
     }
   },
-  async updated() {
-    await this.initialize();
-    if (this.containerID) {
-      this.reattach(this.containerID);
-    }
-  },
   unmounted() {
     this.destroy();
   },
