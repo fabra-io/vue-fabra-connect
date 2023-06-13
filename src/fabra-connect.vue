@@ -81,14 +81,5 @@ export default defineComponent({
       });
     },
   },
-  watch: {
-    $props: {
-      deep: true,
-      handler() {
-        this.destroy()
-        this.initialize();
-      },
-    }
-  },
 });
 </script>
